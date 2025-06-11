@@ -1,0 +1,1 @@
+docker buildx build --platform linux/arm64 --build-arg BUILD_FROM=ghcr.io/hassio-addons/debian-base/aarch64:7.8.3 -t ghcr.io/andressomadossi/ha-addons-promtail-aarch64:3.0.8 --push .

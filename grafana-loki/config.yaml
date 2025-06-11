@@ -1,15 +1,14 @@
 ---
 name: Grafana Loki
-version: 3.5.1
+version: 3.5.2
 slug: grafana-loki
-description: |
-  Grafana Loki is a horizontally-scalable, highly-available, multi-tenant log aggregation system inspired by Prometheus
+description: Grafana Loki is a horizontally-scalable, highly-available, multi-tenant log aggregation system inspired by Prometheus
 arch:
   - aarch64
   - amd64
 image: "ghcr.io/andressomadossi/ha-addons-loki-{arch}"
+url: https://github.com/andressomadossi/home-assistant-addons/tree/master/grafana-loki
 startup: system
-url: https://github.com/andressomadossi/home-assistant-addons/tree/master/loki
 init: false
 ports:
   3100/tcp: 3100

@@ -1,15 +1,14 @@
 ---
 name: Grafana Promtail
-version: 3.0.6
+version: 3.0.8
 slug: grafana-promtail
-description: |
-  Promtail is an agent which ships the contents of local logs to a private Loki instance or Grafana Cloud.
+description: Promtail is an agent which ships the contents of local logs to Loki
 arch:
   - aarch64
   - amd64
-image: "ghcr.io/bluemaex/ha-addons-promtail-{arch}"
-startup: system
+image: "ghcr.io/andressomadossi/ha-addons-promtail-{arch}"
 url: https://github.com/bluemaex/home-assistant-addons/tree/master/promtail
+startup: system
 init: false
 journald: true
 ingress: true
