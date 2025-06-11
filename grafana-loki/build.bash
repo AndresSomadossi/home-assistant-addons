@@ -1,1 +1,1 @@
-docker buildx build --platform linux/arm64 --build-arg BUILD_FROM=ghcr.io/home-assistant/aarch64-base:3.22 -t ghcr.io/andressomadossi/ha-addons-loki-aarch64:3.5.2 --push .
+docker buildx build --platform linux/arm64 --build-arg BUILD_FROM=ghcr.io/home-assistant/aarch64-base:3.22 -t ghcr.io/andressomadossi/ha-addons-loki-aarch64:3.5.3 --push .
