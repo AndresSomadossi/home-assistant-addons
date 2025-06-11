@@ -1,6 +1,6 @@
 ---
 name: Grafana Promtail
-version: 3.0.8
+version: 3.0.9
 slug: grafana-promtail
 description: Promtail is an agent which ships the contents of local logs to Loki
 arch:
@@ -37,4 +37,4 @@ schema:
   additional_scrape_configs: str?
   config_path: str?
   log_level: list(trace|debug|info|notice|warning|error|fatal)?
-  skip_local_journal_scrape_config: bool?
+  skip_default_scrape_config: bool?
