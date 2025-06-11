@@ -32,15 +32,15 @@ fi
     echo
     echo "scrape_configs:"
 } >> "${CONFIG_FILE}"
-if bashio::config.true 'skip_local_journal_scrape_config'; then
+if bashio::config.true 'skip_default_scrape_config'; then
     bashio::log.info 'Skipping default journald scrape config...'
     if ! bashio::config.is_empty 'additional_pipeline_stages'; then
         bashio::log.warning
-        bashio::log.warning "'additional_pipeline_stages' ignored since 'skip_local_journal_scrape_config' is true!"
+        bashio::log.warning "'additional_pipeline_stages' ignored since 'skip_default_scrape_config' is true!"
         bashio::log.warning 'See documentation for more information.'
         bashio::log.warning
     fi
-    bashio::config.require 'additional_scrape_configs' "'skip_local_journal_scrape_config' is true"
+    bashio::config.require 'additional_scrape_configs' "'skip_default_scrape_config' is true"
 
 elif ! bashio::config.is_empty 'additional_pipeline_stages'; then
     bashio::log.info "Adding additional pipeline stages to default journal scrape config..."
