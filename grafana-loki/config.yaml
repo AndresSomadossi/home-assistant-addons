@@ -1,6 +1,6 @@
 ---
 name: Grafana Loki
-version: 3.5.4
+version: 3.5.5
 slug: grafana-loki
 description: Grafana Loki is a horizontally-scalable, highly-available, multi-tenant log aggregation system inspired by Prometheus
 arch:
@@ -17,8 +17,7 @@ ports_description:
 panel_icon: mdi:router-network
 map:
   - config
-  - share
-  - data
+  - "share/loki-data:/data:rw"
 options:
   days_to_keep: 30
   log_level: info
